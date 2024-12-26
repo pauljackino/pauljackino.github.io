@@ -130,3 +130,11 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
+
+.project-separator {
+    margin: 30px auto;
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+    border-radius: 1px;
+}
