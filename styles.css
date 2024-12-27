@@ -87,7 +87,6 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px; /* Add this to control spacing between elements */
 }
 
 .bio-image {
