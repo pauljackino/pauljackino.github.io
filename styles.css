@@ -139,3 +139,10 @@ form {
     background-color: #ddd;
     border-radius: 1px;
 }
+
+/* Adjusting the extended projects list */
+ul {
+    text-align: left; /* Aligns the list text to the left */
+    padding-left: 40px; /* Adds padding for better readability */
+    margin: 20px; /* Centers the list within the container */
+}
