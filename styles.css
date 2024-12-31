@@ -146,3 +146,34 @@ ul {
     padding-left: 40px; /* Adds padding for better readability */
     margin: 20px; /* Centers the list within the container */
 }
+.references ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.references li {
+    margin-bottom: 20px; /* Add space between references */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.references p {
+    margin: 5px 0; /* Adjust spacing within each reference */
+    color: #444;
+    font-size: 0.9em;
+}
+
+.references h2 {
+    margin-bottom: 20px; /* Space below the References header */
+}
+.welcome-video video {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
