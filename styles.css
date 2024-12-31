@@ -169,10 +169,15 @@ ul {
 .references h2 {
     margin-bottom: 20px; /* Space below the References header */
 }
+.welcome-video {
+    text-align: center; /* Centers the video within the container */
+    margin: 20px 0;     /* Adds margin above and below */
+}
+
 .welcome-video video {
     width: 100%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;     /* Centers the video within its block */
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
