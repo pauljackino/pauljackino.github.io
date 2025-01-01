@@ -203,6 +203,15 @@ ul {
     transform: scale(1.05); /* Slightly enlarges the image */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
 }
+
+/* Special Styling for communityservice.jpg */
+.photo-gallery img[data-src="images/pictures/communityservice.jpg"] {
+    grid-column: 1 / -1; /* Span the entire width */
+    max-width: 80%; /* Make it larger */
+    margin: 0 auto; /* Center it horizontally */
+    justify-self: center;
+}
+
 /* Lightbox Styling */
 .lightbox {
     display: none;
