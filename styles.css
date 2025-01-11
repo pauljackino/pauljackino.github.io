@@ -140,6 +140,15 @@ form {
     border-radius: 1px;
 }
 
+.mega-collage-description {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9; /* Light background for emphasis */
+    border-left: 4px solid #007BFF; /* Highlight with a left border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 /* Adjusting the extended projects list */
 ul {
     text-align: left; /* Aligns the list text to the left */
@@ -202,6 +211,23 @@ ul {
 .photo-gallery img:hover {
     transform: scale(1.05); /* Slightly enlarges the image */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.large-picture img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Ensure it doesn't exceed the container width */
+    margin: 20px auto; /* Center the image */
+    display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle default shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.large-picture img:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 /* Special Styling for communityservice.jpg */

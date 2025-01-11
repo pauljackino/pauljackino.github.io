@@ -3,12 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const images = Array.from(document.querySelectorAll('.photo-gallery img'));
+    const megaCollage = document.querySelector('.large-picture img'); // Select mega collage image
     let currentIndex = 0;
+
+    // Add mega collage to images list
+    if (megaCollage) {
+        images.push(megaCollage);
+    }
 
     // Open lightbox and set current image
     images.forEach((img, index) => {
         img.addEventListener('click', () => {
-            lightboxImage.src = img.getAttribute('data-src');
+            lightboxImage.src = img.getAttribute('data-src') || img.src; // Use data-src or src
             lightbox.classList.add('active');
             currentIndex = index;
         });
@@ -25,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigate to the previous image
     const showPreviousImage = () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
-        lightboxImage.src = images[currentIndex].getAttribute('data-src');
+        lightboxImage.src = images[currentIndex].getAttribute('data-src') || images[currentIndex].src;
     };
 
     // Navigate to the next image
     const showNextImage = () => {
         currentIndex = (currentIndex + 1) % images.length;
-        lightboxImage.src = images[currentIndex].getAttribute('data-src');
+        lightboxImage.src = images[currentIndex].getAttribute('data-src') || images[currentIndex].src;
     };
 
     // Add navigation arrows to the lightbox
