@@ -289,3 +289,58 @@ ul {
 .lightbox-arrow.right {
     right: 20px;
 }
+/* Adjust margins for .news-container */
+.news-container {
+    max-width: 800px; /* Controls the overall container width */
+    margin: 20px auto; /* Keeps it centered with more space on sides */
+    padding: 30px; /* Adds space inside the container */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add space below the page title */
+.news-container .page-title {
+    margin-bottom: 30px; /* Adds extra space below the title section */
+}
+
+/* Style the caption below the picture */
+.large-picture .caption {
+    font-size: 0.9em; /* Smaller font size */
+    color: #555; /* Subtle color for emphasis */
+    text-align: center; /* Center-align the caption */
+    margin-top: 10px;
+}
+.link-center {
+    text-align: center;
+    margin-top: 20px; /* Add some spacing above for better visual flow */
+}
+
+.link-center a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.link-center a:hover {
+    text-decoration: underline;
+}
+/* Center and reduce spacing for titles in ffmcollab.html */
+.page-title h2, .page-title h3 {
+    text-align: center;
+    margin-bottom: 5px; /* Reduce space between the lines */
+    line-height: 1.2; /* Tighter line spacing */
+}
+
+.page-title h2 {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+    color: #333;
+}
+
+.page-title h3 {
+    font-size: 1.5em; /* Adjust as needed */
+    font-weight: normal;
+    color: #555;
+}
