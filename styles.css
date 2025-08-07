@@ -311,6 +311,13 @@ ul {
     text-align: center; /* Center-align the caption */
     margin-top: 10px;
 }
+.caption {
+    font-size: 0.85em; /* ~15% smaller */
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .link-center {
     text-align: center;
     margin-top: 20px; /* Add some spacing above for better visual flow */
