@@ -255,9 +255,12 @@ ul {
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
+    height: auto;
+    width: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    object-fit: contain; /* Ensures full image fits without cropping */
 }
 
 .lightbox.active {
