@@ -208,6 +208,13 @@ ul {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
 
 }
+.photo-gallery img {
+    width: 100%;
+    max-width: 180px;   /* ✅ controls thumbnail size */
+    height: auto;
+    margin-top: 10px;
+}
+
 .photo-gallery img:hover {
     transform: scale(1.05); /* Slightly enlarges the image */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
@@ -403,4 +410,16 @@ ul {
 
 .cert-badge:hover {
     transform: scale(1.05);
+}
+.volunteer-photo {
+  width: 160px;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.volunteer-photo:hover {
+  transform: scale(1.05);
 }
